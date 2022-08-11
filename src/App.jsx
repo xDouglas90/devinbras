@@ -1,9 +1,10 @@
-import { GlobalStyle } from './styles/GlobalStyle';
+import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
+      <p>oi</p>
     </>
   );
 }
