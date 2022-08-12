@@ -1,10 +1,11 @@
+import { Button } from './components';
+
 import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <p>oi</p>
     </>
   );
 }
