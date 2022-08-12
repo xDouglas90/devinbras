@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import colors from './colors';
+
 export const GlobalStyles = createGlobalStyle`
     :root {
         font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -28,13 +30,19 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        background-color: ${colors.brandGreenLight};
         margin: 0;
         padding: 0;
     }
 
     h1, h2, h3, h4, h5, h6, strong {
+        color: ${colors.grayHeadline};
         font-weight: 700;
     } 
+
+    p {
+        color: ${colors.grayParagraph};
+    }
 
     a {
         color: inherit;
@@ -47,6 +55,10 @@ export const GlobalStyles = createGlobalStyle`
         outline: none;
         cursor: pointer;
         padding: 0;
+    }
+
+    input, select, textarea {
+        background-color: ${colors.brandGreenLight};
     }
 
     [disabled] {
