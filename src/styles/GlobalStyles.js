@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 import colors from './colors';
 
-import DMSansRegular from '../assets/fonts/DMSans-Regular.ttf';
-import DMSansBold from '../assets/fonts/DMSans-Bold.ttf';
+import DMSansRegular from '@assets/fonts/DMSans-Regular.ttf';
+import DMSansBold from '@assets/fonts/DMSans-Bold.ttf';
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {

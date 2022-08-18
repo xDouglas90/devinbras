@@ -1,11 +1,12 @@
-import { Button } from './components';
+import { Topbar } from '@components';
 
-import { GlobalStyles } from './styles/GlobalStyles';
+import { GlobalStyles } from '@styles/GlobalStyles';
 
 function App() {
   return (
     <>
       <GlobalStyles />
+      <Topbar />
     </>
   );
 }
