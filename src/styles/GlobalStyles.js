@@ -29,6 +29,16 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         -webkit-text-size-adjust: 100%;
+
+        // Colors
+        --brand-green: ${colors.brandGreen};
+        --brand-green-hover: ${colors.brandGreenHover};
+        --brand-green-lt: ${colors.brandGreenLight};
+        --brand-green-lt2: ${colors.brandGreenLight2};
+        --brand-beige: ${colors.brandBeige};
+        --gray-headline: ${colors.grayHeadline};
+        --gray-paragraph: ${colors.grayParagraph};
+        --white: ${colors.white};
     }
 
     *, *::after, *::before {
@@ -45,18 +55,18 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${colors.brandGreenLight};
+        background-color: var(--brand-green-lt);
         margin: 0;
         padding: 0;
     }
 
     h1, h2, h3, h4, h5, h6, strong {
-        color: ${colors.grayHeadline};
+        color: var(--gray-headline);
         font-weight: 700;
     } 
 
     p {
-        color: ${colors.grayParagraph};
+        color: var(--gray-paragraph);
     }
 
     a {
@@ -73,7 +83,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     input, select, textarea {
-        background-color: ${colors.brandGreenLight};
+        background-color: var(--brand-green-lt);
     }
 
     [disabled] {
