@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import colors from '../../../styles/colors.js';
-
 export const Btn = styled.button`
   display: flex;
   flex-direction: row;
@@ -10,11 +8,13 @@ export const Btn = styled.button`
   gap: 16px;
 
   background: ${({ styleType }) =>
-    styleType === 'primary' ? colors.brandGreen : colors.white};
-  border: 1px solid ${colors.brandGreen};
+    styleType === 'primary' ? 'var(--brand-green)' : 'transparent'};
+  border: 1px solid
+    ${({ styleType }) =>
+      styleType === 'primary' ? 'var(--white)' : 'var(--white)'};
   border-radius: 40px;
   color: ${({ styleType }) =>
-    styleType === 'primary' ? colors.white : colors.brandGreen};
+    styleType === 'primary' ? 'var(--white)' : 'var(--white)'};
   font-size: 14px;
   font-weight: 700;
   padding: 16px 32px;
@@ -22,10 +22,12 @@ export const Btn = styled.button`
 
   &:hover {
     background: ${({ styleType }) =>
-      styleType === 'primary' ? colors.brandGreenHover : colors.brandGreen};
+      styleType === 'primary'
+        ? 'var(--brand-green-hover)'
+        : 'var(--brand-green)'};
     border: 1px solid
       ${({ styleType }) =>
-        styleType === 'primary' ? colors.brandGreenHover : colors.brandGreen};
-    color: ${colors.white};
+        styleType === 'primary' ? 'var(--brand-green-hover)' : 'var(--white)'};
+    color: var(--white);
   }
 `;
